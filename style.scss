@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
+* {
+    margin: 0; // Remove o espaçamento externo padrão dos navegadores
+    padding: 0; // Remove preenchimento padrão
+    box-sizing: border-box; // Inclui padding e borda no cálculo do tamanho
+}
+
+header {
+    background-color: #66BB6A;
+    height: 20vh;
+    color: #ffffff;
+    //padding-left: 50px; Padding move internamente, movendo da esquerda para a direita
+    //padding-top: 25px; movendo internamente de cima para baixo
+    //padding-bottom: 20px; movendo internamente de baixo para cima (comentar o padding top)
+    //padding-right: 50px; Move internamente da direita para a esquerda
+
+    // margin: 30px; Mostrar que a margin move toda a caixa, movendo os 4 lados (cima, direita, baixo, esquerda)
+    // margin-top: 20px; // top - em cima
+    // margin-left: 30px; // left - esquerda
+    // margin-right: 50px; // right - direita
+    // margin-bottom: 20px; // bottom -  embaixo
+h2 {
+        display: block; //Ocupa toda a linha
+        display: inline; //Ocupa somente o tamanho necessário
+        display: inline-block; // Deixa na mesma linha,e permite o controle de largura e altura
+        width: 40%;
+        padding-left: 160px;
+        margin-top: 40px;
+        font-family: "Sansita Swashed", system-ui;
+    }
+
+    /* O nav também é block por padrão, então muda o comportamento */
+
+
+ nav {
+        display: block; //Ocupa toda a linha
+        display: inline; //Ocupa somente o tamanho necessário
+        width: 40%; //Com o inline, ele não aceita tamanhos.
+        display: inline-block; // Deixa namesma linha,e permite o controle de largura e altura
+        text-align: end;
+
+        a {
+            margin-left: 40px; // espaço entre os links
+            color: #ffffff;
+            text-decoration: none; //Tira a estilização padrão da tag A
+        }
+    }
+}
+
+.background{
+  background-image: url("./assets/banner.png");
+  height: 80vh;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  padding-top: 200px;
+  h1{
+    font-family: "Sansita Swashed", system-ui;
+  }
+
+  p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 300px;
+    width: 50%;
+
+  }
+}
